@@ -28,7 +28,7 @@
 #### 全局使用
 - npm link 即把elk-cms命令绑定到全局(之后直接使用elk-cms作为命令开头)
 
-##### 测试
+##### 测试 指令有4个
 - elk-cms 查看 options & commands
 - elk-cms add | a  添加模板命令
 - elk-cms init | i 生成项目命令

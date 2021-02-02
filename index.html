@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+    /**
+     * 脚手架工具-快速生成一个完整项目结构,帮助开发人员专注项目开发
+     * 本质：根据不同的操作指令在远程仓库(github/gitlab)把不同的模板拉取到本地
+     * 
+     * 创建一个脚手架并发布到NPM平台上(或公司内部私服上)
+    */
+
+    /**
+     * 大纲
+     * 1.创建项目
+     * {
+     *      template.json中配置所有模板&分支
+     * }
+     * 2.编写指令 command files
+     * 3.配置脚手架信息 package.json
+     *  {
+     *      name唯一 / name一定是与npm现有包不重复的名字, 在npm官网查询一下
+     *      添加bin
+     *      安装 commander child_process，执行shell的插件 - npm install commander child_process --save
+     *      #! /usr/bin/env node 这代码不可缺，它执行代码使用的是node.js
+     *  }
+     * 4.本地测试
+     * {
+     *      本地调用 npm link -把elk-cms挂载全局可以直接使用
+     * }
+     * 5.发布脚手架
+     * {
+     *      1.上传npm -注册账号
+     *      2.查看npm配置镜像 - npm config get registry 
+     *          设置npm镜像
+                npm config set registry http://registry.npmjs.org/
+                设置淘宝镜像
+                npm config set registry https://registry.npm.taobao.org
+            需要的时候可以切换回来
+            3. npm login (输入npm 账号密码邮箱)
+            4. npm publish
+            4.1 删除发布 npm unpublish --force // 强制删除
+                npm unpublish [name]@版本号 // npm unpublish elk-cms@1.0.0 指定版本号
+                npm deprecate // 某些情况???
+            5. 测试 npm install [name] -g / [name] -V / [name] init
+      * }
+        
+
+      elk-cms add
+        Template Name: 自定义模板名称
+        Git https link: 来自github或gitlab url地址
+        branch name: 拉取哪个分支
+
+      elk-cms init
+        
+        template name: 与 add 命令添加的一样，即选择初始化的模板
+        Project name: github所下载的name
+      
+        
+    */
+    
+</script>
+<body>
+    
+</body>
+</html>
