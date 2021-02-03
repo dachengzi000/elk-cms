@@ -1,15 +1,7 @@
 {
     "tpl": {
-        "cms": {
-            "url": "https://git.homecreditcfc.cn/it-dev/mapp/mapp-frontend-services/mapp-cms.git",
-            "branch": "master"
-        },
-        "cmms": {
-            "url": "https://git.homecreditcfc.cn/it-dev/mapp/mapp-frontend-services/mapp-cms.git",
-            "branch": "master"
-        },
         "elk-cms": {
-            "url": "https://github.com/dachengzi000/mapp-cms.git",
+            "url": "https://github.com/dachengzi000/cms.git",
             "branch": "master"
         }
     }
