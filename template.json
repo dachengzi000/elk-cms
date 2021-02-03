@@ -1,7 +1,7 @@
 {
     "tpl": {
         "elk-cms": {
-            "url": "https://github.com/dachengzi000/cms.git",
+            "url": "https://github.com/dachengzi000/test.git",
             "branch": "master"
         }
     }
